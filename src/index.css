@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background:url("./src/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    cursor:pointer;
+}
+.balls{
+    background:url("./src/images/pit.png");
+    background-position: center;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border:none;
+    opacity: 0.8;
+    cursor:pointer;
+}
+header{
+  color:hsla(36, 73%, 15%, 0.855);
+  background-color: #f9828264;
+  height:130px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+}
+h2{
+    position: relative;
+    left:30%;
+    cursor:pointer;
+}
+.ball-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-top:10px;
+    cursor:pointer;
+}
+img{
+    height:80px;
+    opacity:0;
+    position: relative;
+    top:30px;
+    transition: opacity 0.5s ease-in-out;
+    cursor:pointer;
+}
+@keyframes show-up {
+    100%{
+        transform:translateY(-40px);
+    }
+}
+.scoreDisplayer{
+    height:220px;
+    width:300px;
+    background-color: rgba(240, 248, 255, 0.451);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    position:fixed;
+    top:30%;
+    left:40%;
+    display: none;
+}
+
+@media (max-width:420px){
+    header{
+        color:hsla(36, 73%, 15%, 0.855);
+        background-color: #f9828264;
+        height:100px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor:pointer;
+      }
+      h1{
+        font-size:20px;
+      }
+      h2{
+        position: relative;
+        left:3%;
+        cursor:pointer;
+    }
+    .balls{
+        background:url("./src/images/pit.png");
+        background-position: center;
+        height:55px;
+        width:55px;
+        border-radius: 50%;
+        border:none;
+        opacity: 0.8;
+        cursor:pointer;
+    }
+    img{
+        height:40px;
+        opacity:0;
+        position: relative;
+       top:-10px;
+        transition: opacity 0.5s ease-in-out;
+        cursor:pointer;
+    }
+    .ball-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        margin-top:10px;
+        cursor:pointer;
+    }
+    .scoreDisplayer{
+        height:120px;
+        width:150px;
+        background-color: rgba(240, 248, 255, 0.451);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:17px;
+        position:fixed;
+        top:30%;
+        left:40%;
+        display: none;
+    }
+}
